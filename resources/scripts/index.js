@@ -16,7 +16,7 @@ gameScreen.classList.add(`d-none`);
 
 // updateScoreTallyUI
 function updateScoreTallyUI(){
-  scoreParagraph.innerHTML = game.userName + ": " + game.score.user + " v CPU: " + game.score.cpu;
+  scoreParagraph.innerHTML = game.username + ": " + game.score.user + " v CPU: " + game.score.cpu;
 }
 
 // updateGameHistoryUI
@@ -27,7 +27,7 @@ function updateGameHistoryUI(){
 
 // start-game-button EventListener
 startGameButton.addEventListener(`click`, function () {
-  const username = game.username;
+  const userName = game.username;
   game = new RockPaperScissors(userName);
   gameScreen.classList.remove('d-none');
   // Complete
@@ -35,11 +35,8 @@ startGameButton.addEventListener(`click`, function () {
 
 // go-button EventListener
 goButton.addEventListener(`click`, function () {
-  const userSelect = game.userSelection;
-  
-});
+  const userSelection = game.play(userSelection);
+  scoreParagraph = game.updateScoreTallyUI();
+  gameHistoryParagraph = game.updateGameHistoryUI();
 
-// If you're doing the extra-credit, uncomment the below: reset-game-button
-// resetGameButton.addEventListener(`click`, function(e) { 
-  
-// });
+});
