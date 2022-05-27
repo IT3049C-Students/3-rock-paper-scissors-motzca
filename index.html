@@ -13,7 +13,7 @@
 <body>
     <div class="container">
         <h1> Rock Paper Scissors </h1>
-        <div #welcome-screen>
+        <div id = "welcome-screen">
             <form id="name-form">
                 <div class="form-group">
                     <label for="username"> Your Name: </label>
@@ -22,11 +22,10 @@
             <button class="btn btn-primary" id="start-game-button"> Start Game! </button>
             </form>
         </div>
-        <div id="game-screen" class = "d-none">
+        <div id="game-screen">
             <div id="score-tally">
                 <p id="score"> User: 0  CPU: 0</p>
             </div>
-        </div>
         <form id="game-form">
             <div class="form-group">
                 <label for="user-selection"> Select your choice </label>
@@ -36,10 +35,11 @@
                     <option value="scissors"> Scissors </option>
                 </select>
             </div>
-            <button class="btn btn-success" id="go-button"> Go! </button>
+            <button class="btn btn-success" id="go-button" type = "button">Go!</button>
         </form>
         <p id="game-history"></p>
     </div>
+</div>
 
     <!-- Our own Scripts -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

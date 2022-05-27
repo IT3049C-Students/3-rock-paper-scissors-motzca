@@ -6,7 +6,7 @@ Instructions to this assignment can be found [here](https://it3049c.github.io/Ma
 
 ## Checklist:
 - [x] update the assignment checks above to the correct link. - Done Automatically
-- [] All tests are passing
+- [x] All tests are passing
 - [x] filled out the self-evaluation.
 - [x] filled out the self-reflection.
 
@@ -18,7 +18,7 @@ I believe I should get at least a 15/20 at the minimum. I worked on this assignm
 ## Team Reflection:
 - Where did you encounter struggles today, and what did you do to deal with it?
 
-I found myself struggling with the game logic and controller. I was having difficulty figuring out what I needed to do. I sought out help from my fellow student Jack McHugh in which he talked me through where I was going wrong and steered me to the correct logic needed for the methods. 
+I found myself struggling with the game logic and controller. I was having difficulty figuring out what I needed to do. I sought out help from my fellow student Jack McHugh and Nick Bell in which they talked me through where I was going wrong and steered me to the correct logic needed for the methods. 
 
 
 ### How long it took us to finish this?
