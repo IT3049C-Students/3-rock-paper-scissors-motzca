@@ -16,23 +16,26 @@ gameScreen.classList.add(`d-none`);
 
 // updateScoreTallyUI
 function updateScoreTallyUI(){
-
+  scoreParagraph.innerHTML = game.userName + ": " + game.score.user + " v CPU: " + game.score.cpu;
 }
 
 // updateGameHistoryUI
 function updateGameHistoryUI(){
+  gameHistoryParagraph.innerHTML = game.gameHistoryLog;
 
 }
 
 // start-game-button EventListener
 startGameButton.addEventListener(`click`, function () {
-  const username = 
+  const username = game.username;
   game = new RockPaperScissors(userName);
+  gameScreen.classList.remove('d-none');
   // Complete
 });
 
 // go-button EventListener
 goButton.addEventListener(`click`, function () {
+  const userSelect = game.userSelection;
   
 });
 
