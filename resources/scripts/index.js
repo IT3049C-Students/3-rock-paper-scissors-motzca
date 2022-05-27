@@ -26,8 +26,8 @@ function updateGameHistoryUI(){
 }
 
 // start-game-button EventListener
-startGameButton.addEventListener(`click`, function (event) {
-  event.preventDefault();
+startGameButton.addEventListener(`click`, function (e) {
+  e.preventDefault();
   const username = userName;
   game = new RockPaperScissors(userName.value);
   welcomeScreen.classList.add('d-none');
@@ -36,8 +36,8 @@ startGameButton.addEventListener(`click`, function (event) {
 });
 
 // go-button EventListener
-goButton.addEventListener(`click`, function (event) {
-  event.preventDefault();
+goButton.addEventListener(`click`, function (e) {
+  e.preventDefault();
   game.play(userSelection);
   game.updateScoreTallyUI();
   game.updateGameHistoryUI();
