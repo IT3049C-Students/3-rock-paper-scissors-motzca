@@ -64,7 +64,7 @@ class RockPaperScissors {
     }
     else if(gameOutcome == 'win'){
       this.score.user ++;
-      this.gameHistoryLog.push(this.username + ' selected ' + userSelection + ', CPU selected ' + cpuResponse + ': ' + this.user + ' won');
+      this.gameHistoryLog.push(this.username + ' selected ' + userSelection + ', CPU selected ' + cpuResponse + ': ' + this.username + ' won');
     }
     else{
       this.gameHistoryLog.push(this.username + ' selected ' + userSelection + ', CPU selected ' + cpuResponse +  ': Tie');

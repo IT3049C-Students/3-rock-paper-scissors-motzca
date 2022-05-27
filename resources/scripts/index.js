@@ -21,7 +21,7 @@ function updateScoreTallyUI(){
 
 // updateGameHistoryUI
 function updateGameHistoryUI(){
-  gameHistoryParagraph.innerHTML = game.gameHistoryLog.join(e=>e+"<br>");
+  gameHistoryParagraph.innerHTML = game.gameHistoryLog.join("<br>");
 
 }
 
