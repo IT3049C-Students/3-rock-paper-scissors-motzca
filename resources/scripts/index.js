@@ -26,17 +26,20 @@ function updateGameHistoryUI(){
 }
 
 // start-game-button EventListener
-startGameButton.addEventListener(`click`, function () {
-  const userName = game.username;
-  game = new RockPaperScissors(userName);
+startGameButton.addEventListener(`click`, function (event) {
+  event.preventDefault();
+  const username = userName;
+  game = new RockPaperScissors(userName.value);
+  welcomeScreen.classList.add('d-none');
   gameScreen.classList.remove('d-none');
   // Complete
 });
 
 // go-button EventListener
-goButton.addEventListener(`click`, function () {
-  const userSelection = game.play(userSelection);
-  scoreParagraph = game.updateScoreTallyUI();
-  gameHistoryParagraph = game.updateGameHistoryUI();
+goButton.addEventListener(`click`, function (event) {
+  event.preventDefault();
+  game.play(userSelection);
+  game.updateScoreTallyUI();
+  game.updateGameHistoryUI();
 
 });
