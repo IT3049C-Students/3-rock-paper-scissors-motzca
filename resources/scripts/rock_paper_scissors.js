@@ -60,11 +60,14 @@ class RockPaperScissors {
 
     if(gameOutcome == 'lose'){
       this.score.cpu ++;
-      this.gameHistoryLog.push(this.user + ' selected ' + userSelection + ', CPU selected ' + cpuResponse +  ': CPU wins wins');
+      this.gameHistoryLog.push(this.user + ' selected ' + userSelection + ', CPU selected ' + cpuResponse +  ': CPU won');
+    }
+    else if(gameOutcome == 'win'){
+      this.score.user ++;
+      this.gameHistoryLog.push(this.user + ' selected ' + userSelection + ', CPU selected ' + cpuResponse + ': ' + this.user + ' won');
     }
     else{
-      this.score.user ++;
-      this.gameHistoryLog.push(this.user + ' selected ' + userSelection + ', CPU selected ' + cpuResponse + ': ' + this.user + ' wins wins');
+      this.gameHistoryLog.push(this.user + ' selected ' + userSelection + ', CPU selected ' + cpuResponse +  ': Tie');
     }
 
   }
